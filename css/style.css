@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../background.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.Logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.Home{
+	max-width: 350px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title{
+	color: #fff;
+	font-size: 70px;
+}
+
+.container{
+    width: 334px;
+    margin: 0 auto;
+    position: absolute;
+    top: 67%;
+    left: 0;
+    text-align: center;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.one{
+	border: none;
+	border-radius: 4px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.48);
+	padding: 20px 50px 20px 70px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	position: relative;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	width: 100%;
+	-webkit-transition:background-position .7s,
+	box-shadow .4s;
+	transition: background-position .7s,
+	           box-shadow .4s;
+	background-size: 110%;
+	font-family: Century Gothic;
+}
+
+.one:hover{
+	background-position: 0% 30%;
+}
+
+.one:hover::after{
+	right: -40px;
+	transition: right .4s,
+	transform 30s .2s linear;
+
+	-webkit-transition: right .4s,
+	transform 30s .2s linear;
+
+	transition: right .4s,
+	-webkit-transform 30s .2s linear;
+
+}
+
+.one::before,
+.one::after{
+	font-family: Century Gothic;
+	display: block;
+	position: absolute;
+}
+
+.one::before{
+	transition:all 1s;
+	-webkit-transition: all 1s;
+	font-size: 30px;
+	left: 25px;
+	top: 19px;
+}
+
+.one::after{
+	font-size: 100px;
+	opacity: 0.3;
+	right: -120px;
+	top: -17px;
+	transition: right .4s, transform .2s;
+	transition: right .4s, 
+	transform .2s -webkit-transform .2s;
+	-webkit-transition: right .4s, transform .2s;
+
+}
+
+.one
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 20px 0px #00FF00;
+	background-image: linear-gradient(to bottom,
+		#00FF78, rgba(126,94,165,0.51)),
+	url("../background.png");
+
+}
+
+.one:hover
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 30px 0px #00FF00;
+}
+.one:hover::after{
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+}
+.one:hover::before
+{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.one::before,
+.one::after
+{
+}
+.one b
+{
+    color: #fff;
+    font-weight: 700;
+}
+
+.container2{
+    width: 334px;
+    margin: 0 auto;
+    position: absolute;
+    top: 7%;
+    left: 80%;
+    text-align: center;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.two{
+	border: none;
+	border-radius: 4px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.48);
+	padding: 20px 40px 20px 60px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	position: relative;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	width: 50%;
+	-webkit-transition:background-position .7s,
+	box-shadow .4s;
+	transition: background-position .7s,
+	           box-shadow .4s;
+	background-size: 110%;
+	font-family: Century Gothic;
+}
+
+.two:hover{
+	background-position: 0% 30%;
+}
+
+.two:hover::after{
+	right: -10px;
+	transition: right .4s,
+	transform 30s .2s linear;
+
+	-webkit-transition: right .4s,
+	transform 30s .2s linear;
+
+	transition: right .4s,
+	-webkit-transform 30s .2s linear;
+
+}
+
+.two::before,
+.two::after{
+	font-family: Century Gothic;
+	display: block;
+	position: absolute;
+}
+
+.two::before{
+	transition:all 1s;
+	-webkit-transition: all 1s;
+	font-size: 30px;
+	left: 20px;
+	top: center;
+}
+
+.two::after{
+	font-size: 100px;
+	opacity: 0.3;
+	right: -120px;
+	top: -17px;
+	transition: right .4s, transform .2s;
+	transition: right .4s, 
+	transform .2s -webkit-transform .2s;
+	-webkit-transition: right .4s, transform .2s;
+
+}
+
+.two
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 20px 0px #FF0000;
+	background-image: linear-gradient(to bottom,
+		#FF0032, rgba(126,94,165,0.51)),
+	url("../background.png");
+
+}
+
+.two:hover
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 30px 0px #FF0000
+;
+}
+
+.two:hover::after{
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+}
+.two:hover::before
+{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.two::before,
+.two::after
+{
+}
+.two b
+{
+    color: #fff;
+    font-weight: 600;
+}
