@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lemon Client</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://cdn.discordapp.com/attachments/824465504956973077/828474197672067072/12b23a7752e8a7a4464c1ff5e596237f.gif");  color: white;
+}
+
+/* Style the header */
+.header {
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  opacity:0.7;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+background-color:black;
+color:white;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  opacity:0.5;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.two{
+text-align:center;
+	border: none;
+	border-radius: 10px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.48);
+	padding: 20px 40px 20px 60px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	position: relative;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	width: 25%;
+	-webkit-transition:background-position .7s,
+	box-shadow .4s;
+	transition: background-position .7s,
+	           box-shadow .4s;
+	background-size: 110%;
+	font-family: Century Gothic;
+}
+
+.two:hover{
+	background-position: 0% 30%;
+}
+
+.two:hover::after{
+	right: -10px;
+	transition: right .4s,
+	transform 30s .2s linear;
+
+	-webkit-transition: right .4s,
+	transform 30s .2s linear;
+
+	transition: right .4s,
+	-webkit-transform 30s .2s linear;
+
+}
+
+.two::before,
+.two::after{
+	font-family: Century Gothic;
+	display: block;
+	position: absolute;
+}
+
+.two::before{
+	transition:all 1s;
+	-webkit-transition: all 1s;
+	font-size: 30px;
+	left: 20px;
+	top: center;
+}
+
+.two::after{
+	font-size: 100px;
+	opacity: 0.3;
+	right: -120px;
+	top: -17px;
+	transition: right .4s, transform .2s;
+	transition: right .4s, 
+	transform .2s -webkit-transform .2s;
+	-webkit-transition: right .4s, transform .2s;
+
+}
+
+.two
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 20px 0px #FF0000;
+	background-image: linear-gradient(to bottom,
+		#FF0032, rgba(126,94,165,0.51)),
+	url("https://cdn.discordapp.com/attachments/824465504956973077/826614815195136030/00739A6A-ACEA-4A68-B8F8-4C2452DD95BF.png");
+
+}
+
+.two:hover
+{
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+	            0px 0px 30px 0px #FF0000
+;
+}
+
+.two:hover::after{
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+}
+.two:hover::before
+{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.two::before,
+.two::after
+{
+}
+.two b
+{
+    color: #fff;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<br><br>
+<h2>Lemon Client<h2>
+  <button class="two">
+            <b>Launch(1.8.9)</b>
+        </button>
+</div>
+<br>
+<b>
+<div class="row">
+  <div class="column" style="background-color:black; text-align:center">News</div>
+  
+  <div class="column" style="background-color:black; text-align:center;">Recommended</div>
+  <div class="column" style="background-color:black; text-align:center;">Friends</div>
+ 
+</div>
+<br>
+
+</body>
+</html>
