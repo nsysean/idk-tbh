@@ -7,91 +7,133 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
+  text-align: center;
 }
-
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-  position: fixed;
+.button1:hover {
+text-decoration: underline;
+font-size: 110%;
+}
+.h2 { 
+font-size: 150% !important;
+}
+.navbar{
+	position: fixed;
   z-index: 9999;
-  top: 0;
-  right: 0;
-  text-align: center;
-  padding: 0;
-  margin: 30px;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: inline-block;
-}
-
-.topnav a:hover {
-  color: black;
-}
-
-.Logo {
-  height: 10%;
-  width: 10%;
+  margin: center;
   left: 0;
+  right: 0;
+}
+ul{
+	/*float: center;*/
+	list-style-type: none;
+	margin-top: 30px;
+
+}
+
+ul li{
+	display: inline-block;
+  
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+  text-decoration: underline;
+  font-size: 150%;
+}
+.column {
+background-color:black;
+color:white;
+  float: left;
+  width: 50%;
+  height: 100%; /* Should be removed. Only for demonstration */
+  opacity:0.9;
+}
+.row {
+  background-image: url("https://media.discordapp.net/attachments/824465504956973077/848061364361625662/C18190B5-BE5F-417C-82D7-C8DB843F9552.jpeg?width=1067&height=600");
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.cardie {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.9);
+  color: black;
+  width: 50%;
+  border-radius: 30px;
+  height: 250%;
+  font-size: 250%;
+  margin-left: 25%;
 }
 </style>
 </head>
 <body>
-<b>
-<div class="topnav">
-  <img src="https://media.discordapp.net/attachments/824465504956973077/835353087631294474/New_Project_1_6.png?width=1067&height=600" alt="Logo" class="Logo">
-  <a class="active" href="#home"><i class="fas fa-home"></i> Home</a>
-  <a href="#news"><i class="far fa-newspaper"></i> News</a>
-  <a href="#partners"><i class="far fa-handshake"></i> Partners</a>
-  <a href="#about"><i class="fas fa-address-card"></i> About</a>
-</div>
-</b>
-<br>
 
-<br>
-<br>
-<br>
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    	<div class="navbar">
+    		<ul>
+      <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="#about"><i class="fas fa-address-card"></i> About</a></li> 
+    			<li><a href="/"><i class="far fa-newspaper"></i> News</a></li>
+    			<li><a href="#partners"><i class="far fa-handshake"></i> Shop</a></li>
+    			  
+    		</ul>
+		</div>
+    <section id="#home">
+<div class="row">
+  <div class="column" style="background-color:transparent; text-align:center; align-items: center; align-content: center;"><img src="https://media.discordapp.net/attachments/824465504956973077/850628552529543178/Atom_Client_v1___Minecraft_1.8.9_6_5_2021_2_54_01_PM.png?width=1228&height=634" style="width: 75%; height: 75%;" class="img"></div>
+  
+  <div class="column" style="background-color:transparent; text-align:center; align-items: center; align-content: center;">	
+        <button href="http://mediafire.com/YourClient" style="color: white; background-color: transparent; transition: 0.6s ease; border: none;  margin-top: 33.3%; margin-buttom: 33.3%;" class="button1">
+        <img src="https://media.discordapp.net/attachments/824465504956973077/850710955373494282/6DDE7105-ECA2-4204-B797-FE105E548C1D.png?width=1440&height=527" style="width:25%; height:25%;">
+            <h1>Download</h1>
+        </button>
 
+		</div>
+
+</div>
+</section>
+<section id="#about">
+<div class="about">
+<h3 style="font-size:1000%">About</h3>
+<div class="row1">
+  <div class="column" style="background-color:transparent; text-align:center; align-items: center; align-content: center;"><img src="https://media.discordapp.net/attachments/824465504956973077/850904969272098836/BV4PwiPCcS2iYBCUhAAhKQgAQk0BMCCtA9cYRmSEACEpCABCQgAQlIYAQENgauDSQqv4r5pNc0QaY47vA3647PwvAu8HfgL8BrCw.png" style="width: 50%; height: 50%;" class="img"></div>
+  
+  <div class="column" style="background-color:transparent; text-align:center; align-items: center; align-content: center;">	
+<div class="cardie">
+<h4 style="padding: 30px; margin: 30px;"><i class="fas fa-tools"></i>   9+ Mods</h4>
+</div><div class="cardie">
+<h4 style="padding: 30px; margin: 30px;"><i class="fas fa-globe"></i>  Founded On 3·30·2021</h4>
+</div>
+<div class="cardie">
+<h4 style="padding: 30px; margin: 30px;"><i class="fas fa-arrow-alt-circle-up"></i>
+  Insane FPS Boost</h4>
+</div>
+
+
+
+		</div>
+
+</div>
+</div>
+</section>
 </body>
 </html>

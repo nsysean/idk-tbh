@@ -27,10 +27,9 @@ app.get('/', (req, res) => {
 	res.render('main.ejs', { data: data });
 });
 	
-app.get('/launcher', (req, res) => {
+app.get('/arc-sw.js', (req, res) => {
 	
-	res.render('index.ejs', { data: [] });
+	res.render('arc-sw.js', { data: [] });
 });
 
 app.listen(port);
-
